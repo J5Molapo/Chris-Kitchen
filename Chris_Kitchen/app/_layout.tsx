@@ -21,7 +21,7 @@ const theme = {
 export default function RootLayout() {
   return (
     <PaperProvider theme={theme}>
-      <Stack screenOptions={{ headerShown: false }} />
+      <Stack screenOptions={{ headerShown: false, animationEnabled: true, animation: 'fade' }} />
     </PaperProvider>
   );
 }
