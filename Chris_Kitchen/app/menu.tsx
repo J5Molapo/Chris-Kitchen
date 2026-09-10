@@ -102,7 +102,7 @@ export default function MenuScreen() {
                 <Card.Content>
                   <View style={styles.courseHeader}>
                     <Text style={styles.courseStep}>Course {course.step}</Text>
-                    <Text style={styles.coursePrice}>${course.price}</Text>
+                    <Text style={styles.coursePrice}>R{course.price}</Text>
                   </View>
                   <Text style={styles.courseName}>{course.name}</Text>
                   <Text style={styles.courseDescription}>{course.description}</Text>

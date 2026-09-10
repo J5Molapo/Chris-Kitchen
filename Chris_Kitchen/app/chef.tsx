@@ -177,7 +177,7 @@ export default function ChefScreen() {
             <View key={course.id} style={styles.menuItem}>
               <View style={styles.menuItemTextWrap}>
                 <Text style={styles.menuItemTitle}>{course.name}</Text>
-                <Text style={styles.menuItemSub}>{course.tags.join(" • ")} • ${course.price}</Text>
+                <Text style={styles.menuItemSub}>{course.tags.join(" • ")} • R{course.price}</Text>
               </View>
               <View style={styles.menuActions}>
                 <Button mode="contained" compact onPress={() => handleEditDish(course.id)} buttonColor="#d8b777" textColor="#1d1713">
