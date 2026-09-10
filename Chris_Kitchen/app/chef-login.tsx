@@ -4,16 +4,11 @@ import { ScrollView, StyleSheet, View } from "react-native";
 import { Button, HelperText, Surface, Switch, Text, TextInput } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const chefCredentials = {
-  email: "chef@chriskitchen.com",
-  password: "kitchen123",
-};
-
 export default function ChefLoginScreen() {
   const router = useRouter();
-  const [email, setEmail] = useState("chef@chriskitchen.com");
-  const [password, setPassword] = useState("kitchen123");
-  const [rememberMe, setRememberMe] = useState(true);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState("");
 
   const isValid = useMemo(() => {
@@ -25,11 +20,6 @@ export default function ChefLoginScreen() {
   const handleLogin = () => {
     if (!isValid) {
       setError("Enter a valid email and 6+ character password.");
-      return;
-    }
-
-    if (email.trim().toLowerCase() !== chefCredentials.email || password !== chefCredentials.password) {
-      setError("Invalid chef credentials. Try the demo login.");
       return;
     }
 
@@ -107,20 +97,6 @@ export default function ChefLoginScreen() {
           >
             Sign in as chef
           </Button>
-
-          <Button
-            mode="outlined"
-            onPress={() => {
-              setEmail(chefCredentials.email);
-              setPassword(chefCredentials.password);
-              setError("");
-            }}
-            style={styles.secondaryButton}
-            textColor="#f8f1ea"
-            labelStyle={styles.secondaryButtonText}
-          >
-            Use demo credentials
-          </Button>
         </Surface>
       </ScrollView>
     </SafeAreaView>
@@ -144,6 +120,4 @@ const styles = StyleSheet.create({
   errorText: { marginBottom: 0, color: "#ffb0a3" },
   primaryButton: { marginTop: 12, borderRadius: 16 },
   primaryButtonText: { fontWeight: "900", fontSize: 15 },
-  secondaryButton: { marginTop: 12, borderRadius: 16, borderColor: "#3c312d" },
-  secondaryButtonText: { fontWeight: "800", fontSize: 15 },
 });
