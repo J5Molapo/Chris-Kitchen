@@ -1,0 +1,12 @@
+.deep-copilot/
+Images/
+Documentation/
+
+# Project app dependencies and generated files
+Chris_Kitchen/node_modules/
+Chris_Kitchen/.expo/
+Chris_Kitchen/dist/
+Chris_Kitchen/web-build/
+Chris_Kitchen/.claude/
+Chris_Kitchen/.vscode/
+Chris_Kitchen/.deep-copilot/
