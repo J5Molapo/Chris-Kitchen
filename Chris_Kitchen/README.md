@@ -1,50 +1,71 @@
-# Welcome to your Expo app 👋
+# Chef Christoffel
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Chef Christoffel is a luxury dining mobile app concept built with Expo and React Native. It gives guests a curated tasting-menu experience with preference-based course selection and gives the chef a private dashboard for order management, kitchen alerts, and menu editing.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Elegant landing experience inspired by fine dining branding
+- Guest menu browsing with selectable courses
+- Preference filters such as Vegetarian, High Protein, No Spice, Quick Pick, and Seasonal
+- Chef login portal with demo authentication
+- Kitchen service board for order tracking and status updates
+- Menu editor for adding, editing, and removing dishes
+- Dark premium UI built with React Native Paper
+
+## Tech Stack
+
+- Expo
+- React Native
+- Expo Router
+- React Native Paper
+- TypeScript
+
+## Project Structure
+
+- `app/` – app screens and state logic
+- `app/index.tsx` – home screen
+- `app/menu.tsx` – guest menu selection
+- `app/preferences.tsx` – dining preference settings
+- `app/chef-login.tsx` – chef authentication screen
+- `app/chef.tsx` – chef dashboard and menu editor
+- `app/store.ts` – in-memory menu and order store
+- `app/_layout.tsx` – global theme and stack navigation
+
+## Getting Started
+
+1. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Start the app:
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Open the app with:
+   - Expo Go on your mobile device
+   - Android emulator
+   - iOS simulator
+   - Web browser via Expo web support
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Demo Chef Login
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Email: `chef@chriskitchen.com`
+- Password: `kitchen123`
 
-## Get a fresh project
-
-When you're ready, run:
+## Available Scripts
 
 ```bash
-npm run reset-project
+npm start
+npm run android
+npm run ios
+npm run web
+npm run lint
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Notes
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is a front-end prototype/demo experience. The data is managed locally in memory and is intended to demonstrate the dining flow, chef workflow, and UI design rather than a production backend integration.

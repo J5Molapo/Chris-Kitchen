@@ -9,7 +9,7 @@ const theme = {
     secondary: "#f2cf8a",
     background: "#120d0b",
     surface: "#1b1512",
-    surfaceVariant: "#201915",
+    surfaceVariant: "#201915", 
     onSurface: "#f8f1ea",
     onPrimary: "#120d0b",
     outline: "#4a3a33",
